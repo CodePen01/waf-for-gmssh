@@ -1,0 +1,11 @@
+{
+    "dd_webhook": {
+        "url": "",
+        "secret": "",
+        "open": false
+    },
+    "http_webhook": {
+        "url": "",
+        "open": false
+    }
+}

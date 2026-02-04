@@ -1,0 +1,30 @@
+[
+    {
+        "uuid": "d167a76c-f653-4b98-b786-d107eed3a879",
+        "open": true,
+        "name": "Exclusive Rule Engine",
+        "bz": "Specialized adaptation for CMS vulnerabilities (such as WordPress, Discuz, ThinkPHP), primarily aimed at defending against RCE attacks.",
+        "rule_name": "cms"
+    },
+    {
+        "uuid": "ad010e3d-c2fc-4556-b272-40748b3256fd",
+        "open": true,
+        "name": "WordPress Defense In Depth",
+        "bz": "Protects against WordPress component vulnerabilities, such as login brute force and permission bypass attacks.",
+        "rule_name": "wordpress"
+    },
+    {
+        "uuid": "474da0c5-d359-423f-a111-2953ba48c24f",
+        "open": true,
+        "name": "ThinkPHP Vuln Patch",
+        "bz": "Adapts high-risk vulnerabilities in the ThinkPHP framework, without code implementation, to provide vulnerability protection.",
+        "rule_name": "thinkphp"
+    },
+    {
+        "uuid": "6c98670d-6301-45b2-abb3-35512c7f413e",
+        "open": true,
+        "name": "General Web Vuln",
+        "bz": "Covers common vulnerabilities such as XSS, SQL injection, etc., and provides basic web attack protection.",
+        "rule_name": "web"
+    }
+]

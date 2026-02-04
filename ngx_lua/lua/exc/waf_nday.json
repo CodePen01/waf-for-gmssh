@@ -1,0 +1,30 @@
+[
+    {
+        "uuid": "d167a76c-f653-4b98-b786-d107eed3a879",
+        "open": true,
+        "name": "专属规则引擎",
+        "bz": "针对 CMS 漏洞（如 WordPress, Discuz, ThinkPHP）的专项适配，主要防御 RCE 攻击。",
+        "rule_name": "cms"
+    },
+    {
+        "uuid": "ad010e3d-c2fc-4556-b272-40748b3256fd",
+        "open": true,
+        "name": "WordPress 深度防护",
+        "bz": "针对 WordPress 组件漏洞，防护登录爆破、权限绕过等攻击",
+        "rule_name": "wordpress"
+    },
+    {
+        "uuid": "474da0c5-d359-423f-a111-2953ba48c24f",
+        "open": true,
+        "name": "ThinkPHP 漏洞补丁",
+        "bz": "适配 ThinkPHP 框架高危漏洞，免代码实现漏洞防护",
+        "rule_name": "thinkphp"
+    },
+    {
+        "uuid": "6c98670d-6301-45b2-abb3-35512c7f413e",
+        "open": true,
+        "name": "通用 Web 漏洞",
+        "bz": "覆盖 XSS、SQL 注入等常见漏洞，提供基础 Web 攻击防护",
+        "rule_name": "web"
+    }
+]

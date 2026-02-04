@@ -1,0 +1,448 @@
+{
+    "open": false,
+    "mode": 1,
+    "lang": "zh-CN",
+    "def_url_cc": {
+        "open": true,
+        "conf": {
+            "list": []
+        }
+    },
+    "def_url_rjyz": {
+        "open": true,
+        "conf": {
+            "list": []
+        }
+    },
+    "def_api_cc": {
+        "open": true,
+        "conf": {
+            "list": []
+        }
+    },
+    "def_static_res": {
+        "open": true,
+        "conf": {}
+    },
+    "def_dir_scan": {
+        "open": true,
+        "conf": {
+            "sz": {
+                "fwsj": 60,
+                "fwcs": 120
+            }
+        }
+    },
+    "def_robot": {
+        "open": true,
+        "conf": {
+            "list": []
+        }
+    },
+    "def_http_req": {
+        "open": true,
+        "conf": {
+            "qqlx": [],
+            "qqt": [
+                {
+                    "uuid": "7d99cc8d-98e8-4a37-bd85-f0d2f2b13dad",
+                    "qqt": "host",
+                    "dx": 500
+                },
+                {
+                    "uuid": "39bd4bf3-631c-4f38-a68b-25adce7fd81b",
+                    "qqt": "header",
+                    "dx": 500
+                },
+                {
+                    "uuid": "42a4abef-acad-48f3-8159-9c8116de230b",
+                    "qqt": "connection",
+                    "dx": 500
+                },
+                {
+                    "uuid": "0f5083b5-a17a-4c08-a1a7-3034a5f95649",
+                    "qqt": "content-length",
+                    "dx": 500
+                },
+                {
+                    "uuid": "39bd4bf3-631c-4f38-a68b-25adce7fd81b",
+                    "qqt": "header",
+                    "dx": 500
+                },
+                {
+                    "uuid": "42a4abef-acad-48f3-8159-9c8116de230b",
+                    "qqt": "connection",
+                    "dx": 500
+                },
+                {
+                    "uuid": "0f5083b5-a17a-4c08-a1a7-3034a5f95649",
+                    "qqt": "content-length",
+                    "dx": 500
+                },
+                {
+                    "uuid": "a18425eb-ad65-4cba-8f05-3c628df613c1",
+                    "qqt": "cache-control",
+                    "dx": 500
+                },
+                {
+                    "uuid": "852124b5-eb70-473c-988f-361c7ba99d3d",
+                    "qqt": "origin",
+                    "dx": 500
+                },
+                {
+                    "uuid": "242c2e38-00d1-4b69-96cf-9caf010c1eac",
+                    "qqt": "content-type",
+                    "dx": 500
+                },
+                {
+                    "uuid": "28244824-cf73-453b-a84e-56f8476157c6",
+                    "qqt": "user-agent",
+                    "dx": 500
+                },
+                {
+                    "uuid": "f4c1c9ac-210e-4cb6-a0bd-eaec3c24ee87",
+                    "qqt": "accept",
+                    "dx": 500
+                },
+                {
+                    "uuid": "d11e0f60-96fa-4acb-bf91-f81c37f01e61",
+                    "qqt": "referer",
+                    "dx": 500
+                },
+                {
+                    "uuid": "360ba184-0b89-4b2a-ac8b-30cbe3d11411",
+                    "qqt": "accept-encoding",
+                    "dx": 500
+                },
+                {
+                    "uuid": "ddde51f3-2258-4fa7-b9ce-8e5f53af1c71",
+                    "qqt": "accept-language",
+                    "dx": 500
+                },
+                {
+                    "uuid": "2a2c6b5c-eb57-4a08-818c-cc5803e5aabc",
+                    "qqt": "cookie",
+                    "dx": 500
+                }
+            ],
+            "qqsl": {
+                "jm_base64": true,
+                "cszdcd": 800000,
+                "post_cszdsl": 1000,
+                "get_cszdsl": 1000
+            }
+        }
+    },
+    "def_gnw_fw": {
+        "open": true,
+        "conf": {
+            "gn": {
+                "open": false,
+                "xyym": 404,
+                "ip_list": []
+            },
+            "gw": {
+                "open": false,
+                "xyym": 404,
+                "ip_list": []
+            }
+        }
+    },
+    "def_sql_inj": {
+        "open": true,
+        "conf": {
+            "list": [
+                {
+                    "uuid": "f74c99da-b24f-42dc-a951-5716104651ae",
+                    "open": true,
+                    "remark": "SQL注入",
+                    "rule": "(?:(union(.+?)select\\s+[A-Za-z0-9]+?))"
+                },
+                {
+                    "uuid": "e0b9b0a2-45ce-4aca-bf69-974b3da74796",
+                    "open": true,
+                    "remark": "SQL注入",
+                    "rule": "(?:from.+?information_schema.+?)"
+                }
+            ]
+        },
+        "xyym": 404
+    },
+    "def_rce": {
+        "open": true,
+        "conf": {
+            "list": [
+                {
+                    "uuid": "3025982d-6112-44a0-b995-659d8d110760",
+                    "open": true,
+                    "remark": "文件包含",
+                    "rule": "(?:etc/\\W*passwd)"
+                },
+                {
+                    "uuid": "c74016fb-c152-4e6b-a69b-553ac6d5fe47",
+                    "open": true,
+                    "remark": "SSRF",
+                    "rule": "(^gopher|^php|^phar|^ldap)\\:/"
+                },
+                {
+                    "uuid": "c2b47bc5-2604-4d69-9d01-11c5b81b0d90",
+                    "open": true,
+                    "remark": "通用漏洞",
+                    "rule": "(invokefunction|call_user_func_array|\\\\think\\\\)"
+                },
+                {
+                    "uuid": "1c31fa27-8808-427e-9b11-6c42889894f1",
+                    "open": true,
+                    "remark": "JAVA代码执行",
+                    "rule": "\\${jndi:"
+                },
+                {
+                    "uuid": "d54b65b8-7e59-4e46-9880-1090624f0f45",
+                    "open": true,
+                    "remark": "一句话屏蔽",
+                    "rule": "(?:define|eval|file_get_contents|include|require_once|shell_exec|phpinfo|system|passthru|chr|char|preg_\\w+|execute|echo|print|print_r|var_dump|(fp)open|showmodaldialog|file_put_contents|fopen|urldecode|scandir)\\("
+                },
+                {
+                    "uuid": "f38a4887-4d5d-4cdb-b6df-93cd7b00c722",
+                    "open": true,
+                    "remark": "一句话屏蔽",
+                    "rule": "base64_decode\\("
+                },
+                {
+                    "uuid": "97d33525-659b-4540-a4ed-ae7f155c286b",
+                    "open": true,
+                    "remark": "PHP流协议过滤",
+                    "rule": "(gopher|doc|php|glob|^file|phar|zlib|ftp|ldap|dict|ogg|data)\\:/"
+                },
+                {
+                    "uuid": "fcd386f6-d530-4e67-a2bf-54afdd9cc042",
+                    "open": true,
+                    "remark": "菜刀流量过滤",
+                    "rule": "(array_map\\(\"ass)"
+                }
+            ]
+        },
+        "xyym": 404
+    },
+    "def_xss": {
+        "open": true,
+        "conf": {
+            "list": [
+                {
+                    "uuid": "cb185d3c-ff9b-443a-a2df-1ab0010c9144",
+                    "open": true,
+                    "remark": "XSS",
+                    "rule": "(\\141\\154\\145\\162\\164|\\x61\\x6c\\x65\\x72\\x74|;alert|'alert')"
+                },
+                {
+                    "uuid": "49f99f0e-9d90-4377-80c7-1ec18c9d0c63",
+                    "open": true,
+                    "remark": "XSS",
+                    "rule": "(window\\['|globalThis\\[|self\\[|top\\[|this\\[|parent\\[)"
+                },
+                {
+                    "uuid": "66768f69-5d00-4412-aa10-536d5ac8460f",
+                    "open": true,
+                    "remark": "XSS",
+                    "rule": "(\\(window\\[)"
+                },
+                {
+                    "uuid": "985378bb-18a8-4547-928f-f32b432f285a",
+                    "open": true,
+                    "remark": "XSS",
+                    "rule": "(\\u\\{0061\\}\\u\\{006c\\}\\u\\{0065\\}\\u\\{0072\\}\\u\\{0074\\})"
+                }
+            ]
+        },
+        "xyym": 404
+    },
+    "def_cookies": {
+        "open": true,
+        "conf": {
+            "list": [
+                {
+                    "uuid": "fddbf9b0-56c5-49d7-b245-72749b06abf3",
+                    "open": true,
+                    "remark": "PHP代码执行",
+                    "rule": "base64_decode\\("
+                },
+                {
+                    "uuid": "df0dd06c-1fc3-4aff-a5a0-7b91064ff546",
+                    "open": true,
+                    "remark": "PHP代码执行",
+                    "rule": "\\$_(GET|post|cookie|files|session|env|phplib|GLOBALS|SERVER)\\["
+                }
+            ]
+        },
+        "xyym": 404
+    },
+    "def_down": {
+        "open": true,
+        "conf": {
+            "list": [
+                {
+                    "uuid": "a1d7afd0-57f8-4939-8501-120cebb552f3",
+                    "open": true,
+                    "remark": "文件包含",
+                    "rule": "\\.+/\\.+/"
+                },
+                {
+                    "uuid": "25b40286-72a7-4413-9a7f-3beb8cbf6a3b",
+                    "open": true,
+                    "remark": "网站备份文件",
+                    "rule": "\\.(htaccess|mysql_history|bash_history|DS_Store|idea|user\\.ini)"
+                },
+                {
+                    "uuid": "f9cb6a32-a0ef-4875-a00e-b4ed29cbed23",
+                    "open": true,
+                    "remark": "网站备份文件",
+                    "rule": "\\.(bak|inc|old|mdb|sql|php~|swp|java|class)$"
+                },
+                {
+                    "uuid": "d24a95ad-55d4-45e5-ac6c-0b73a20e9f08",
+                    "open": true,
+                    "remark": "网站备份文件",
+                    "rule": "\\^/(vhost|bbs|host|wwwroot|www|site|root|backup|data|ftp|db|admin|website|web).*\\.(rar|sql|zip|tar\\.gz|tar)$"
+                },
+                {
+                    "uuid": "706e1876-33e5-49af-85be-69a415974767",
+                    "open": true,
+                    "remark": "恶意脚本",
+                    "rule": "/(hack|shell|spy|phpspy)\\.php$"
+                },
+                {
+                    "uuid": "1f203f3f-97cd-405a-b3a0-880d6b941ed8",
+                    "open": true,
+                    "remark": "信息泄漏",
+                    "rule": "/actuator/(env|loggers|shutdown|heapdump|threaddump|mappings|restart|configprops|conditions|refresh)$"
+                },
+                {
+                    "uuid": "d19b1741-ac86-4b1e-9861-0342b472f54d",
+                    "open": true,
+                    "remark": "信息泄漏",
+                    "rule": "\\.(env|env\\.dev|git|git/|git/config)$"
+                }
+            ]
+        },
+        "xyym": 404
+    },
+    "def_url_bh": {
+        "open": true,
+        "conf": {
+            "zdcsfw": [],
+            "jzzxphp": [
+                "/cache/",
+                "/config/",
+                "/runtime/",
+                "/application/",
+                "/temp/",
+                "/logs/",
+                "/log/"
+            ]
+        }
+    },
+    "def_upload": {
+        "open": true,
+        "conf": {
+            "sz": {
+                "scgsyx": true,
+                "jzsc": ".php,.exe,.sh,.pl",
+                "wjtjc": ".php,.jsp,.asp,.js,.sh,.pl"
+            }
+        }
+    },
+    "def_crawler": {
+        "open": true,
+        "conf": {
+            "list": [
+                "python-requests",
+                "Python-urllib",
+                "Scrapy",
+                "selenium",
+                "playwright",
+                "HeadlessChrome",
+                "Apache-HttpClient",
+                "Java",
+                "Go-http-client",
+                "PHP",
+                "curl"
+            ]
+        },
+        "xyym": 404
+    },
+    "def_scan": {
+        "open": true,
+        "conf": {
+            "sz": {
+                "header": [
+                    "WPScan",
+                    "HTTrack",
+                    "antSword",
+                    "harvest",
+                    "censys",
+                    "dirbuster",
+                    "pangolin",
+                    "nmap",
+                    "sqln",
+                    "hydra",
+                    "Parser",
+                    "libwww",
+                    "BBBike",
+                    "sqlmap",
+                    "w3af",
+                    "owasp",
+                    "Nikto",
+                    "fimap",
+                    "havij",
+                    "zmeu",
+                    "BabyKrokodil",
+                    "netsparker",
+                    "httperf",
+                    "acunetix-wvs-test-for-some-inexistent-file",
+                    "netsparker",
+                    "acunetix_wvs_security_test",
+                    "AppScan",
+                    "XSS@HERE"
+                ],
+                "cookie": [
+                    "CustomCookie",
+                    "acunetixCookie"
+                ],
+                "args": [
+                    "Acunetix-Aspect",
+                    "Acunetix-Aspect-Password",
+                    "Acunetix-Aspect-Queries",
+                    "X-WIPP",
+                    "X-RequestManager-Memo",
+                    "X-Request-Memo",
+                    "X-Scan-Memo"
+                ]
+            }
+        },
+        "xyym": 404
+    },
+    "def_resp_xytm": {
+        "open": true,
+        "conf": {
+            "sz": {
+                "mgxxjc": true,
+                "mgwzth": []
+            }
+        }
+    },
+    "def_req_lj": {
+        "open": true,
+        "conf": {
+            "urlcsgl": [],
+            "wjc": []
+        }
+    },
+    "hw_mode": false,
+    "cdn_sz": {
+        "open": false,
+        "mode": 1,
+        "http_header": "",
+        "http_headers": "cf-connecting-ip,ali-cdn-real-ip,true-client-ip,x-real-ip,x-forwarded-for",
+        "x_forwarded_for": ""
+    }
+}

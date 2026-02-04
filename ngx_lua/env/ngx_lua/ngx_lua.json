@@ -1,0 +1,25 @@
+{
+    "ngx_list": [
+        "nginx1.12.0",
+        "nginx1.12.1",
+        "nginx1.12.2",
+        "nginx1.14.0",
+        "nginx1.14.1",
+        "nginx1.14.2",
+        "nginx1.16.0",
+        "nginx1.16.1",
+        "nginx1.18.0",
+        "nginx1.20.0",
+        "nginx1.20.1",
+        "nginx1.20.2",
+        "nginx1.22.0",
+        "nginx1.22.1",
+        "nginx1.24.0",
+        "nginx1.26.0",
+        "nginx1.26.1",
+        "nginx1.26.2",
+        "nginx1.26.3",
+        "nginx1.28.0",
+        "nginx1.28.1"
+    ]
+}

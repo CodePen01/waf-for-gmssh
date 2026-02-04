@@ -1,0 +1,12 @@
+__pycache__
+*.pyc
+*.log
+__pycache__/
+.venv
+.idea
+test
+dist/*
+dist/
+.DS_Store
+_bak
+_bak3
